@@ -1,4 +1,4 @@
 [submodule "HeliosLauncher"]
-	path = HeliosLauncher
+	path = Official-Helios-Launcher
 	url = https://github.com/dscalzi/HeliosLauncher
 	branch = master
