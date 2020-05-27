@@ -6,14 +6,14 @@ Big thanks to @dscalzi for Helios Launcher <3
 
 You can find some tools here :
 
-|Name|Description|Folder Name|Finish?|Link|
+|Name|Description|Folder Name|Finished ?|Link|
 |---|---|---|---|---|
 |Helios Launcher|Clean version of an upgrade of Helios Launcher|helios-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Helios-Launcher)
 |Helios Cracked|Clean version of Helios Launcher who allow crack|cracked-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Cracked-Helios)
 
 You can find some launcher here :
 
-|Name|Allow Crack?|Folder Name|Finish?|Link|
+|Name|Allow Crack?|Folder Name|Finished ?|Link|
 |---|---|---|---|---|
 |CityMine|No|citymine-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Cracked-Helios)
 |Infernia|No|infernia-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Infernia-Launcher)
