@@ -2,7 +2,7 @@
 
 This repository includes all what's related to Helios. Each folder contain a readme which is more specific 
 
-Big thanks at @dscalzi for Helios Launcher <3
+Big thanks to @dscalzi for Helios Launcher <3
 
 You can find some tools here :
 
