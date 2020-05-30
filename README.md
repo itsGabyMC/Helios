@@ -8,7 +8,7 @@ You can find some tools here :
 
 |Name|Description|Folder Name|Finished ?|Link|
 |---|---|---|---|---|
-|Helios Launcher|Clean version of an upgrade of Helios Launcher|helios-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Helios-Launcher)
+|Improved Helios Launcher|Clean version of an upgrade of Helios Launcher|improved-helios-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Improved-Helios-Launcher)
 |Helios Cracked Launcher|Clean version of Helios Launcher who allow crack|cracked-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Cracked-Helios)
 |Official Helios Launcher|Official version of Helios Launcher|official-helios-launcher|---|[link](https://github.com/dscalzi/HeliosLauncher)
 
