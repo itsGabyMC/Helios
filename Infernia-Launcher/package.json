@@ -1,10 +1,10 @@
 {
-  "name": "daulalauncher",
-  "version": "v1.2.0",
-  "productName": "DaulaLauncher",
-  "description": "Modded Minecraft Launcher",
-  "author": "Superkooka (https://github.com/superkooka/Daula-Launcher/)",
-  "license": "UNLICENSED",
+  "name": "infernia-launcher",
+  "version": "v1.0.0",
+  "productName": "Infernia Launcher",
+  "description": "Infernia Launcher",
+  "author": "Superkooka (https://github.com/superkooka/Helios/)",
+  "license": "GNU GENERAL PUBLIC LICENSE V3",
   "homepage": "https://github.com/superkooka/Daula-Launcher/",
   "bugs": {
     "url": "https://github.com/superkooka/Daula-Launcher/issues"

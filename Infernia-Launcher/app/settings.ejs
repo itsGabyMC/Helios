@@ -2,7 +2,7 @@
     <div id="settingsContainerLeft">
         <div id="settingsNavContainer">
             <div id="settingsNavHeader">
-                <span id="settingsNavHeaderText">Paramètre</span>
+                <span id="settingsNavHeaderText">Paramètres</span>
             </div>
             <div id="settingsNavItemsContainer">
                 <div id="settingsNavItemsContent">
@@ -94,43 +94,12 @@
                 <div id="settingsSelServContent">
 
                 </div>
-                <div id="settingsSwitchServerContainer">
-                    <div id="settingsSwitchServerContent">
-                        <button id="settingsSwitchServerButton">Echanger</button>
-                    </div>
-                </div>
             </div>
             <div id="settingsModsContainer">
-                <div id="settingsReqModsContainer">
-                    <div class="settingsModsHeader">Mods requis</div>
-                    <div id="settingsReqModsContent">
-
-                    </div>
-                </div>
                 <div id="settingsOptModsContainer">
-                    <div class="settingsModsHeader">Mods optionnels</div>
+                    <div class="settingsModsHeader">Mods</div>
                     <div id="settingsOptModsContent">
                         
-                    </div>
-                </div>
-                <div id="settingsDropinModsContainer">
-                    <div class="settingsModsHeader">Ajouter des mods</div>
-                    <button id="settingsDropinFileSystemButton">+ Ajouter des mods <span id="settingsDropinRefreshNote">(F5 pour rafraîchir)</span></button>
-                    <div id="settingsDropinModsContent">
-                        
-                    </div>
-                </div>
-                <div id="settingsShadersContainer">
-                    <div class="settingsModsHeader">Shaderpacks</div>
-                    <div id="settingsShaderpackDesc">Activez ou désactivez les shaders. Veuillez noter que les shaders ne fonctionneront correctement que sur des configurations puissantes. Vous pouvez ajouter des packs personnalisés ici.</div>
-                    <div id="settingsShaderpackWrapper">
-                        <button id="settingsShaderpackButton"> + </button>
-                        <div class="settingsSelectContainer">
-                            <div class="settingsSelectSelected" id="settingsShadersSelected">Selectionner Shaderpack</div>
-                            <div class="settingsSelectOptions" id="settingsShadersOptions" hidden>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -204,7 +173,7 @@
                         <label class="settingsFileSelLabel" for="settingsJavaExecSel">Choisir le fichier</label>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc">L'exécutable Java est validé avant le lancement du jeu.<strong>Nécessite Java 8 x64.</strong><br>Le chemin doit se terminer par<strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong>.</div>
+                <div class="settingsFileSelDesc">L'exécutable Java est validé avant le lancement du jeu.<strong>Nécessite Java 8 x64.</strong><br>Le chemin doit se terminer par <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong>.</div>
             </div>
             <div id="settingsJVMOptsContainer">
                 <div id="settingsJVMOptsTitle">Options JVM supplémentaires</div>
@@ -232,18 +201,6 @@
             <div class="settingsTabHeader">
                 <span class="settingsTabHeaderText">Paramètres du lanceur</span>
                 <span class="settingsTabHeaderDesc">Options liées au lanceur lui-même.</span>
-            </div>
-            <div class="settingsFieldContainer">
-                <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">Autoriser les mises à jour ded pré-versions.</span>
-                    <span class="settingsFieldDesc">Les pré-versions incluent de nouvelles fonctionnalités qui n'ont peut-être pas été entièrement testées ou intégrées.<br>Cela sera toujours vrai si vous utilisez une pre-version.</span>
-                </div>
-                <div class="settingsFieldRight">
-                    <label class="toggleSwitch">
-                        <input type="checkbox" cValue="AllowPrerelease">
-                        <span class="toggleSwitchSlider"></span>
-                    </label>
-                </div>
             </div>
             <div class="settingsFileSelContainer">
                 <div class="settingsFileSelContent">
