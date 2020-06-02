@@ -245,138 +245,143 @@
                 </div>
                 <div id="settingsJVMOptsDesc">
                     <span id="settingsJVMOptsDescPart1">Options to be provided to the JVM at runtime. <em>-Xms</em> and <em>-Xmx</em> should not be included.</span>
-                    <span id="settingsJVMOptsDescPart2"><br><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">
+                    <span id="settingsJVMOptsDescPart2"><br><a
+                                href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">
                     <span id="settingsJVMOptsDescPart3">Available Options for Java 8</span></a>.</span>
                 </div>
             </div>
-            <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
-                <div class="settingsTabHeader">
-                    <span class="settingsTabHeaderText" id="settingsLauncherSettingsText">Launcher Settings</span>
-                    <span class="settingsTabHeaderDesc" id="settingsLauncherSettingsDesc">Options related to the launcher itself.</span>
+        </div>
+        <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
+            <div class="settingsTabHeader">
+                <span class="settingsTabHeaderText" id="settingsLauncherSettingsText">Launcher Settings</span>
+                <span class="settingsTabHeaderDesc" id="settingsLauncherSettingsDesc">Options related to the launcher itself.</span>
+            </div>
+            <div class="settingsFieldContainer">
+                <div class="settingsFieldLeft">
+                    <span class="settingsFieldTitle" id="settingsUpdatePreReleaseText">Allow Pre-Release Updates.</span>
+                    <span class="settingsFieldDesc" id="settingsUpdatePreReleaseDesc">Pre-Releases include new features which may have not been fully tested or integrated.<br>This will always be true if you are using a pre-release version.</span>
                 </div>
-                <div class="settingsFieldContainer">
-                    <div class="settingsFieldLeft">
-                        <span class="settingsFieldTitle" id="settingsUpdatePreReleaseText">Allow Pre-Release Updates.</span>
-                        <span class="settingsFieldDesc" id="settingsUpdatePreReleaseDesc">Pre-Releases include new features which may have not been fully tested or integrated.<br>This will always be true if you are using a pre-release version.</span>
-                    </div>
-                    <div class="settingsFieldRight">
-                        <label class="toggleSwitch">
-                            <input type="checkbox" cValue="AllowPrerelease">
-                            <span class="toggleSwitchSlider"></span>
-                        </label>
+                <div class="settingsFieldRight">
+                    <label class="toggleSwitch">
+                        <input type="checkbox" cValue="AllowPrerelease">
+                        <span class="toggleSwitchSlider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="settingsFileSelContainer">
+                <div class="settingsFileSelContent">
+                    <div class="settingsFieldTitle" id="settingsDataDirTitle">Data Directory</div>
+                    <div class="settingsFileSelActions">
+                        <div class="settingsFileSelIcon">
+                            <svg class="settingsFileSelSVG">
+                                <g>
+                                    <path fill="gray"
+                                          d="m10.044745,5c0,0.917174 -0.746246,1.667588 -1.667588,1.667588l-4.168971,0l-2.501382,0c-0.921009,0 -1.667588,0.750415 -1.667588,1.667588l0,6.670353l0,2.501382c0,0.917174 0.746604,1.667588 1.667588,1.667588l16.675882,0c0.921342,0 1.667588,-0.750415 1.667588,-1.667588l0,-2.501382l0,-8.337941c0,-0.917174 -0.746246,-1.667588 -1.667588,-1.667588l-8.337941,0z"/>
+                                    <path fill="gray"
+                                          d="m1.627815,1.6c-0.921009,0 -1.667588,0.746579 -1.667588,1.667588l0,4.168971l8.337941,0l0,0.833794l11.673118,0l0,-4.168971c0,-0.921009 -0.746246,-1.667588 -1.667588,-1.667588l-8.572237,0c-0.288493,-0.497692 -0.816284,-0.833794 -1.433292,-0.833794l-6.670353,0z"/>
+                                    <path fill="lightgray"
+                                          d="m10.025276,4c0,0.918984 -0.747719,1.670879 -1.670879,1.670879l-4.177198,0l-2.506319,0c-0.922827,0 -1.670879,0.751896 -1.670879,1.670879l0,6.683517l0,2.506319c0,0.918984 0.748078,1.670879 1.670879,1.670879l16.708794,0c0.923161,0 1.670879,-0.751896 1.670879,-1.670879l0,-2.506319l0,-8.354397c0,-0.918984 -0.747719,-1.670879 -1.670879,-1.670879l-8.354397,0z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <input class="settingsFileSelVal" type="text" value="null" cValue="DataDirectory" disabled>
+                        <input class="settingsFileSelSel" id="settingsDataDirSel" type="file" webkitdirectory>
+                        <label class="settingsFileSelLabel" id="settingsDataChooseFolder" for="settingsDataDirSel">Choose
+                            Folder</label>
                     </div>
                 </div>
-                <div class="settingsFileSelContainer">
-                    <div class="settingsFileSelContent">
-                        <div class="settingsFieldTitle" id="settingsDataDirTitle">Data Directory</div>
-                        <div class="settingsFileSelActions">
-                            <div class="settingsFileSelIcon">
-                                <svg class="settingsFileSelSVG">
-                                    <g>
-                                        <path fill="gray" d="m10.044745,5c0,0.917174 -0.746246,1.667588 -1.667588,1.667588l-4.168971,0l-2.501382,0c-0.921009,0 -1.667588,0.750415 -1.667588,1.667588l0,6.670353l0,2.501382c0,0.917174 0.746604,1.667588 1.667588,1.667588l16.675882,0c0.921342,0 1.667588,-0.750415 1.667588,-1.667588l0,-2.501382l0,-8.337941c0,-0.917174 -0.746246,-1.667588 -1.667588,-1.667588l-8.337941,0z"/>
-                                        <path fill="gray" d="m1.627815,1.6c-0.921009,0 -1.667588,0.746579 -1.667588,1.667588l0,4.168971l8.337941,0l0,0.833794l11.673118,0l0,-4.168971c0,-0.921009 -0.746246,-1.667588 -1.667588,-1.667588l-8.572237,0c-0.288493,-0.497692 -0.816284,-0.833794 -1.433292,-0.833794l-6.670353,0z"/>
-                                        <path fill="lightgray" d="m10.025276,4c0,0.918984 -0.747719,1.670879 -1.670879,1.670879l-4.177198,0l-2.506319,0c-0.922827,0 -1.670879,0.751896 -1.670879,1.670879l0,6.683517l0,2.506319c0,0.918984 0.748078,1.670879 1.670879,1.670879l16.708794,0c0.923161,0 1.670879,-0.751896 1.670879,-1.670879l0,-2.506319l0,-8.354397c0,-0.918984 -0.747719,-1.670879 -1.670879,-1.670879l-8.354397,0z"/>
-                                    </g>
-                                </svg>
+                <div class="settingsFileSelDesc" id="settingsDataFolderDesc">All game files and local Java
+                    installations will be stored in the data directory.<br>Screenshots and world saves are stored in
+                    the instance folder for the corresponding server configuration.
+                </div>
+            </div>
+        </div>
+        <div id="settingsTabAbout" class="settingsTab" style="display: none;">
+            <div class="settingsTabHeader">
+                <span class="settingsTabHeaderText" id="settingsAboutTitle">About</span>
+                <span class="settingsTabHeaderDesc" id="settingsAboutDesc">View information and release notes for the current version.</span>
+            </div>
+            <div id="settingsAboutCurrentContainer">
+                <div id="settingsAboutCurrentContent">
+                    <div id="settingsAboutCurrentHeadline">
+                        <img id="settingsAboutLogo" src="./assets/images/SealCircle.png">
+                        <span id="settingsAboutLauncherName">Helios Launcher</span>
+                    </div>
+                    <div id="settingsAboutCurrentVersion">
+                        <div id="settingsAboutCurrentVersionCheck">&#10003;</div>
+                        <div id="settingsAboutCurrentVersionDetails">
+                            <span id="settingsAboutCurrentVersionTitle">Stable Release</span>
+                            <div id="settingsAboutCurrentVersionLine">
+                                <span id="settingsAboutCurrentVersionText">Version </span>
+                                <span id="settingsAboutCurrentVersionValue">0.0.1-alpha.12</span>
                             </div>
-                            <input class="settingsFileSelVal" type="text" value="null" cValue="DataDirectory" disabled>
-                            <input class="settingsFileSelSel" id="settingsDataDirSel" type="file" webkitdirectory>
-                            <label class="settingsFileSelLabel" id="settingsDataChooseFolder" for="settingsDataDirSel">Choose Folder</label>
                         </div>
                     </div>
-                    <div class="settingsFileSelDesc" id="settingsDataFolderDesc">All game files and local Java
-                        installations will be stored in the data directory.<br>Screenshots and world saves are stored in
-                        the instance folder for the corresponding server configuration.
+                </div>
+                <div id="settingsAboutButtons">
+                    <a href="https://github.com/dscalZi/HeliosLauncher" id="settingsAboutSourceButton"
+                       class="settingsAboutButton">Source (GitHub)</a>
+                    <!-- The following must be included in third-party usage. -->
+                    <!-- <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
+                    <a href="https://github.com/dscalZi/HeliosLauncher/issues" id="settingsAboutSupportButton"
+                       class="settingsAboutButton">Support</a>
+                    <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton">DevTools Console</a>
+                </div>
+            </div>
+            <div class="settingsChangelogContainer">
+                <div class="settingsChangelogContent">
+                    <div class="settingsChangelogHeadline">
+                        <div class="settingsChangelogLabel" id="settingsChangelogLabel">Release Notes</div>
+                        <div class="settingsChangelogTitle" id="settingsChangelogTitle">Changelog</div>
+                    </div>
+                    <div class="settingsChangelogText" id="settingsChangelogText">
+                        No Release Notes
+                    </div>
+                </div>
+                <div class="settingsChangelogActions">
+                    <a class="settingsChangelogButton settingsAboutButton" id="settingsChangelogButtonText"
+                       href="#">View Release Notes on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div id="settingsTabUpdate" class="settingsTab" style="display: none;">
+            <div class="settingsTabHeader">
+                <span class="settingsTabHeaderText" id="settingsUpdateText">Launcher Updates</span>
+                <span class="settingsTabHeaderDesc" id="settingsUpdateDesc">Download, install, and review updates for the launcher.</span>
+            </div>
+            <div id="settingsUpdateStatusContainer">
+                <div id="settingsUpdateStatusContent">
+                    <div id="settingsUpdateStatusHeadline">
+                        <span id="settingsUpdateTitle">You Are Running the Latest Version</span>
+                    </div>
+                    <div id="settingsUpdateVersion">
+                        <div id="settingsUpdateVersionCheck">&#10003;</div>
+                        <div id="settingsUpdateVersionDetails">
+                            <span id="settingsUpdateVersionTitle">Stable Release</span>
+                            <div id="settingsUpdateVersionLine">
+                                <span id="settingsUpdateVersionText">Version </span>
+                                <span id="settingsUpdateVersionValue">0.0.1-alpha.18</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="settingsUpdateActionContainer">
+                        <button id="settingsUpdateActionButton">Check for Updates</button>
                     </div>
                 </div>
             </div>
-            <div id="settingsTabAbout" class="settingsTab" style="display: none;">
-                <div class="settingsTabHeader">
-                    <span class="settingsTabHeaderText" id="settingsAboutTitle">About</span>
-                    <span class="settingsTabHeaderDesc" id="settingsAboutDesc">View information and release notes for the current version.</span>
-                </div>
-                <div id="settingsAboutCurrentContainer">
-                    <div id="settingsAboutCurrentContent">
-                        <div id="settingsAboutCurrentHeadline">
-                            <img id="settingsAboutLogo" src="./assets/images/SealCircle.png">
-                            <span id="settingsAboutLauncherName">Helios Launcher</span>
-                        </div>
-                        <div id="settingsAboutCurrentVersion">
-                            <div id="settingsAboutCurrentVersionCheck">&#10003;</div>
-                            <div id="settingsAboutCurrentVersionDetails">
-                                <span id="settingsAboutCurrentVersionTitle">Stable Release</span>
-                                <div id="settingsAboutCurrentVersionLine">
-                                    <span id="settingsAboutCurrentVersionText">Version </span>
-                                    <span id="settingsAboutCurrentVersionValue">0.0.1-alpha.12</span>
-                                </div>
-                            </div>
+            <div class="settingsChangelogContainer">
+                <div class="settingsChangelogContent">
+                    <div class="settingsChangelogHeadline">
+                        <div class="settingsChangelogLabel" id="settingsChangelogNewerText">What's New</div>
+                        <div class="settingsChangelogTitle" id="settingsChangelogNewerDesc">Update Release Notes
                         </div>
                     </div>
-                    <div id="settingsAboutButtons">
-                        <a href="https://github.com/dscalZi/HeliosLauncher" id="settingsAboutSourceButton"
-                           class="settingsAboutButton">Source (GitHub)</a>
-                        <!-- The following must be included in third-party usage. -->
-                        <!-- <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
-                        <a href="https://github.com/dscalZi/HeliosLauncher/issues" id="settingsAboutSupportButton"
-                           class="settingsAboutButton">Support</a>
-                        <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton">DevTools Console</a>
-                    </div>
-                </div>
-                <div class="settingsChangelogContainer">
-                    <div class="settingsChangelogContent">
-                        <div class="settingsChangelogHeadline">
-                            <div class="settingsChangelogLabel" id="settingsChangelogLabel">Release Notes</div>
-                            <div class="settingsChangelogTitle" id="settingsChangelogTitle">Changelog</div>
-                        </div>
-                        <div class="settingsChangelogText" id="settingsChangelogText">
-                            No Release Notes
-                        </div>
-                    </div>
-                    <div class="settingsChangelogActions">
-                        <a class="settingsChangelogButton settingsAboutButton" id="settingsChangelogButtonText"
-                           href="#">View Release Notes on GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div id="settingsTabUpdate" class="settingsTab" style="display: none;">
-                <div class="settingsTabHeader">
-                    <span class="settingsTabHeaderText" id="settingsUpdateText">Launcher Updates</span>
-                    <span class="settingsTabHeaderDesc" id="settingsUpdateDesc">Download, install, and review updates for the launcher.</span>
-                </div>
-                <div id="settingsUpdateStatusContainer">
-                    <div id="settingsUpdateStatusContent">
-                        <div id="settingsUpdateStatusHeadline">
-                            <span id="settingsUpdateTitle">You Are Running the Latest Version</span>
-                        </div>
-                        <div id="settingsUpdateVersion">
-                            <div id="settingsUpdateVersionCheck">&#10003;</div>
-                            <div id="settingsUpdateVersionDetails">
-                                <span id="settingsUpdateVersionTitle">Stable Release</span>
-                                <div id="settingsUpdateVersionLine">
-                                    <span id="settingsUpdateVersionText">Version </span>
-                                    <span id="settingsUpdateVersionValue">0.0.1-alpha.18</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="settingsUpdateActionContainer">
-                            <button id="settingsUpdateActionButton">Check for Updates</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="settingsChangelogContainer">
-                    <div class="settingsChangelogContent">
-                        <div class="settingsChangelogHeadline">
-                            <div class="settingsChangelogLabel" id="settingsChangelogNewerText">What's New</div>
-                            <div class="settingsChangelogTitle" id="settingsChangelogNewerDesc">Update Release Notes
-                            </div>
-                        </div>
-                        <div class="settingsChangelogText" id="settingsNoChangelog">
-                            No Release Notes
-                        </div>
+                    <div class="settingsChangelogText" id="settingsNoChangelog">
+                        No Release Notes
                     </div>
                 </div>
             </div>
         </div>
-        <script src="./assets/js/scripts/settings.js"></script>
     </div>
+    <script src="./assets/js/scripts/settings.js"></script>
 </div>
