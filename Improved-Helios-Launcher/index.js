@@ -9,8 +9,6 @@ const path                          = require('path')
 const semver                        = require('semver')
 const url                           = require('url')
 
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0
-
 // Setup auto updater.
 function initAutoUpdater(event, data) {
 
