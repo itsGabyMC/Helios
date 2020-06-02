@@ -37,6 +37,7 @@
     "request": "^2.88.2",
     "semver": "^7.1.3",
     "tar-fs": "^2.0.0",
+    "twig": "^1.15.1",
     "winreg": "^1.2.4"
   },
   "devDependencies": {
