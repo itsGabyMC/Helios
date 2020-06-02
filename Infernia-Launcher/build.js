@@ -18,8 +18,8 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'daulalauncher',
-        productName: 'Daula Launcher',
+        appId: 'infernialauncher',
+        productName: 'Infernia Launcher',
         artifactName: '${productName}.${ext}',
         copyright: 'Copyright © 2020 Superkooka',
         directories: {
@@ -46,10 +46,10 @@ builder.build({
         },
         linux: {
             target: 'AppImage',
-            maintainer: 'Daniel Scalzi',
+            maintainer: 'Superkooka',
             vendor: 'Daniel Scalzi',
-            synopsis: 'Modded Minecraft Launcher',
-            description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.',
+            synopsis: 'Infernia Minecraft Launcher',
+            description: 'Infernia Minecraft launcher which allows users to join modded servers. All mods, configurations are handled automatically.',
             category: 'Game'
         },
         compression: 'maximum',
