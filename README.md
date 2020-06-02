@@ -16,7 +16,7 @@ You can find some launcher here :
 
 |Name|Allow Crack?|Folder Name|Finished ?|Link|
 |---|---|---|---|---|
-|CityMine|No|citymine-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Cracked-Helios)
+|CityMine|No|citysmine-launcher|No|[link](https://github.com/Superkooka/Helios/tree/master/Citysmine-Launcher)
 |Infernia|No|infernia-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Infernia-Launcher)
 |Obsidia|No|obisida-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Obsidia-Helios)
 |Oerthyon|No|oerthyon-launcher|Yes|[link](https://github.com/Superkooka/Helios/tree/master/Oerthyon-Helios)
