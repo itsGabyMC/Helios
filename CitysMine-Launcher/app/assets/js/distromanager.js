@@ -537,7 +537,7 @@ exports.pullRemote = function(){
         return exports.pullLocal()
     }
     return new Promise((resolve, reject) => {
-        const distroURL = 'http://citysmine.mtxserv.fr/launcher/distribution.json'
+        const distroURL = 'https://helios-files.geekcorner.eu.org/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
